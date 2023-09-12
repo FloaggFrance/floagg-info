@@ -1,0 +1,90 @@
+/* IMPORT FONT FROM CDNFONTS.COM */
+@import url('https://fonts.cdnfonts.com/css/philips-display-2');
+@import url('https://fonts.cdnfonts.com/css/geologica');
+
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	font-family: 'Geologica', sans-serif;
+	font-weight: 300;
+}
+
+main {
+	text-align: center;
+
+	max-width: 600px;
+	
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+
+	transform: translateX(-50%) translateY(-50%);
+}
+
+main h1 {
+	font-size: 50px;
+	line-height: 68px;
+}
+
+main p {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+main ul {
+	margin-top: 32px;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 32px;
+}
+
+main ul a {
+	display: inline-block;
+
+	acolor: white;
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 600;
+}
+
+@media (max-width: 900px) {
+	main {
+		max-width: 100%;
+		min-width: 100%;
+
+		padding: 0 16px;
+	}
+
+	main h1 {
+		font-size: 40px;
+		line-height: 58px;
+	}
+
+	main p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}

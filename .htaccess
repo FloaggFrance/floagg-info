@@ -1,0 +1,7 @@
+RewriteEngine on
+Options -Indexes
+
+RewriteRule ^condition/$ cgu.pdf
+RewriteRule ^entreprise/$ mention_legale.pdf
+RewriteRule ^about/$ mention_legale.pdf
+RewriteRule ^contrat/$ asset/model_contrat.pdf
